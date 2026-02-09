@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riri - Advanced Discord Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-robot"></i>
+            <span>Riri.txa</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#commands">Commands</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#documentation">Docs</a>
+        </div>
+        <a href="#invite" class="cta-button">Add to Discord</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="floating">Riri Discord Bot</h1>
+        <p>Advanced multipurpose Discord bot featuring music, moderation, leveling, economy, and much more. Everything you need to manage and enhance your Discord server.</p>
+        <a href="#invite" class="cta-button" style="padding: 1rem 3rem; font-size: 1.2rem;">
+            <i class="fas fa-plus"></i> Invite Riri
+        </a>
+        
+        <div class="bot-stats">
+            <div class="stat">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Features</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Commands</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Customization</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title">Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Advanced Music System</h3>
+                <p>High-quality music playback with playlist support, lyrics, and crossfade. Supports YouTube, Spotify, SoundCloud and more.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Leveling & Economy</h3>
+                <p>Complete leveling system with rank cards, leaderboards, titles, and virtual economy with shops and trading.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Moderation Suite</h3>
+                <p>Advanced moderation tools including auto-mod, offense tracking, warning system, and comprehensive logging.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Welcome System</h3>
+                <p>Customizable welcome and leave messages with embedded images, roles assignment, and member verification.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Chat System</h3>
+                <p>Intelligent chat responses, context-aware conversations, and custom AI personalities for your server.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Fully Customizable</h3>
+                <p>Every feature can be customized through our web dashboard. Change prefixes, commands, and behaviors easily.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="commands" id="commands">
+        <h2 class="section-title">Command Categories</h2>
+        <div class="commands-filter">
+            <button class="filter-btn active" data-filter="all">All Commands</button>
+            <button class="filter-btn" data-filter="music">Music</button>
+            <button class="filter-btn" data-filter="moderation">Moderation</button>
+            <button class="filter-btn" data-filter="leveling">Leveling</button>
+            <button class="filter-btn" data-filter="utility">Utility</button>
+        </div>
+        
+        <div class="commands-grid">
+            <!-- Music Commands -->
+            <div class="command-card" data-category="music">
+                <div class="command-header">
+                    <span class="command-name">/play</span>
+                    <span class="command-category">Music</span>
+                </div>
+                <p class="command-description">Play music from YouTube, Spotify, or direct URLs</p>
+                <div class="command-usage">/play &lt;song name or url&gt;</div>
+            </div>
+            
+            <div class="command-card" data-category="music">
+                <div class="command-header">
+                    <span class="command-name">/queue</span>
+                    <span class="command-category">Music</span>
+                </div>
+                <p class="command-description">View and manage the music queue</p>
+                <div class="command-usage">/queue [page]</div>
+            </div>
+            
+            <!-- Moderation Commands -->
+            <div class="command-card" data-category="moderation">
+                <div class="command-header">
+                    <span class="command-name">/warn</span>
+                    <span class="command-category">Moderation</span>
+                </div>
+                <p class="command-description">Issue a warning to a member</p>
+                <div class="command-usage">/warn @user [reason]</div>
+            </div>
+            
+            <div class="command-card" data-category="moderation">
+                <div class="command-header">
+                    <span class="command-name">/clear</span>
+                    <span class="command-category">Moderation</span>
+                </div>
+                <p class="command-description">Clear messages from a channel</p>
+                <div class="command-usage">/clear &lt;amount&gt;</div>
+            </div>
+            
+            <!-- Leveling Commands -->
+            <div class="command-card" data-category="leveling">
+                <div class="command-header">
+                    <span class="command-name">/rank</span>
+                    <span class="command-category">Leveling</span>
+                </div>
+                <p class="command-description">Check your or someone's rank card</p>
+                <div class="command-usage">/rank [@user]</div>
+            </div>
+            
+            <div class="command-card" data-category="leveling">
+                <div class="command-header">
+                    <span class="command-name">/leaderboard</span>
+                    <span class="command-category">Leveling</span>
+                </div>
+                <p class="command-description">View server level leaderboard</p>
+                <div class="command-usage">/leaderboard [page]</div>
+            </div>
+            
+            <!-- Utility Commands -->
+            <div class="command-card" data-category="utility">
+                <div class="command-header">
+                    <span class="command-name">/serverinfo</span>
+                    <span class="command-category">Utility</span>
+                </div>
+                <p class="command-description">Display detailed server information</p>
+                <div class="command-usage">/serverinfo</div>
+            </div>
+            
+            <div class="command-card" data-category="utility">
+                <div class="command-header">
+                    <span class="command-name">/help</span>
+                    <span class="command-category">Utility</span>
+                </div>
+                <p class="command-description">Get help with Riri's commands</p>
+                <div class="command-usage">/help [command]</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview" id="dashboard">
+        <h2 class="section-title">Web Dashboard</h2>
+        <p style="color: #99AAB5; max-width: 600px; margin: 0 auto 3rem;">Control every aspect of Riri through our intuitive web dashboard</p>
+        
+        <div class="preview-container">
+            <div class="preview-image">
+                <div style="text-align: center;">
+                    <i class="fas fa-sliders-h" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                    <div>Interactive Dashboard Preview</div>
+                    <div style="font-size: 1rem; margin-top: 1rem;">(Live dashboard coming soon)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invite Section -->
+    <section class="hero" id="invite" style="padding: 6rem 5%;">
+        <h2>Ready to Enhance Your Server?</h2>
+        <p style="margin-bottom: 3rem;">Add Riri to your Discord server today and unlock its full potential</p>
+        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#" class="cta-button" style="background: var(--gradient-accent);">
+                <i class="fab fa-discord"></i> Invite Riri
+            </a>
+            <a href="#documentation" class="cta-button" style="background: rgba(255, 255, 255, 0.1);">
+                <i class="fas fa-book"></i> Documentation
+            </a>
+            <a href="https://github.com/yourusername/riri" class="cta-button" style="background: rgba(255, 255, 255, 0.1);">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Riri.txa</h3>
+                <p>Advanced Discord bot for modern communities. Feature-rich, reliable, and constantly evolving.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#support">Support Server</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#status">Status</a></li>
+                    <li><a href="#changelog">Changelog</a></li>
+                    <li><a href="#api">API Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 Riri.txa. All rights reserved. Discord is a trademark of Discord Inc.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Made with <i class="fas fa-heart" style="color: var(--accent);"></i> by the Riri Development Team</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
